@@ -93,7 +93,7 @@ function Monster.new(id, location, spawnRegionCollection, spawnRegion, other_sta
     return self
 end
 
-function Monster:_init(monster, )
+function Monster:_init(monster, location, spawnRegionCollection, spawnRegion, other_stats, post_init_callback)
     if self._initialized == true then
         return
     end
